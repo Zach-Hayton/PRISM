@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PRISM - Cut through the noise</title>
+  <meta name="description" content="PRISM is a browser-first reliability assistant that surfaces reliability signals while people read." />
+  <meta property="og:title" content="PRISM - Cut through the noise" />
+  <meta property="og:description" content="A browser-first reliability assistant for a noisier web shaped by polarization, AI-generated text, and synthetic media." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/images/prism-logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/prism.css" />
+</head>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="nav" data-nav>
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="PRISM home">
+        <img src="assets/images/prism-logo.svg" alt="" />
+        <span>PRISM</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="is-active" href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="about.html">Mission</a>
+        <a href="mailto:casey_mccabe1@baylor.edu?subject=PRISM%20Partnership">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="download.html">Download beta</a>
+      <button class="menu-button" type="button" data-menu-button aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" data-mobile-menu aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="download.html">Download</a>
+      <a href="about.html">Mission</a>
+      <a href="mailto:casey_mccabe1@baylor.edu?subject=PRISM%20Partnership">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-large">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="pill">
+            <span class="pulse"></span>
+            Built for clarity, not clicks
+          </div>
+          <h1>Cut through the noise. See the spectrum.</h1>
+          <p class="hero-sub">
+            PRISM highlights reliability signals directly in the browser so readers can slow down
+            and compare cues in context.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="download.html">Download beta</a>
+            <a class="button secondary" href="mailto:casey_mccabe1@baylor.edu?subject=PRISM%20Partnership">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="browser-frame hero-browser reveal" aria-label="PRISM extension preview">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+            <div class="fake-url">news.example.com/article</div>
+          </div>
+          <div class="article-demo">
+            <div class="article-left">
+              <div class="line short"></div>
+              <div class="line"></div>
+              <p>
+                Officials claim the plan will create a
+                <mark tabindex="0" data-tip="Unsupported claim risk: large numeric claim needs a clear source.">historic 450% improvement</mark>
+                in public safety within one year.
+              </p>
+              <p>
+                Critics say the policy is a
+                <mark tabindex="0" data-tip="Loaded language: emotionally charged framing may need closer review.">catastrophic attack</mark>
+                on local communities.
+              </p>
+              <p>
+                The article cites
+                <mark tabindex="0" data-tip="Vague sourcing: identify who made the claim and where it appeared.">people familiar with the matter</mark>
+                but does not link a primary source.
+              </p>
+            </div>
+            <aside class="score-card">
+              <div class="score-ring" style="--score: 72">
+                <span>72</span>
+              </div>
+              <h3>PRISM Quick Score</h3>
+              <p>Mixed reliability signals. Review unsupported statistics and loaded framing.</p>
+              <div class="mini-bars" aria-hidden="true">
+                <span style="--w: 78%"></span>
+                <span style="--w: 62%"></span>
+                <span style="--w: 83%"></span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics-section section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="kicker">Why now</span>
+          <h2>The web is louder than the reader.</h2>
+          <p>
+            Trust is falling, synthetic content is rising, and political framing moves fast.
+            PRISM gives readers a clearer view before they decide what to trust.
+          </p>
+        </div>
+
+        <div class="evidence-chart reveal">
+          <div class="chart-copy">
+            <span class="kicker">Real signal</span>
+            <h3>Trust is falling while information risk is rising.</h3>
+            <p>
+              This metric is the share of Americans who say they have a great deal or a fair amount of trust
+              in mass media to report the news fully, accurately, and fairly. Gallup's long-running trend
+              fell from 68% in 1972 to 28% in 2025.
+            </p>
+          </div>
+
+          <div class="chart-canvas" role="img" aria-label="Line chart showing U.S. trust in mass media declining from 68 percent in 1972 to 28 percent in 2025.">
+            <svg viewBox="0 0 720 360" aria-hidden="true">
+              <defs>
+                <linearGradient id="trustLine" x1="0" x2="1" y1="0" y2="0">
+                  <stop offset="0%" stop-color="#7bdcff" />
+                  <stop offset="100%" stop-color="#46e0c2" />
+                </linearGradient>
+                <linearGradient id="trustArea" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#46e0c2" stop-opacity="0.26" />
+                  <stop offset="100%" stop-color="#46e0c2" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+
+              <g class="grid-lines">
+                <line x1="68" y1="84" x2="660" y2="84" />
+                <line x1="68" y1="156" x2="660" y2="156" />
+                <line x1="68" y1="228" x2="660" y2="228" />
+                <line x1="68" y1="300" x2="660" y2="300" />
+              </g>
+
+              <g class="axis-labels">
+                <text x="24" y="88">80%</text>
+                <text x="24" y="160">60%</text>
+                <text x="24" y="232">40%</text>
+                <text x="24" y="304">20%</text>
+                <text x="64" y="336">1972</text>
+                <text x="612" y="336">2025</text>
+              </g>
+
+              <path class="trust-area" d="M90 99 L630 209 L630 300 L90 300 Z" />
+              <line class="trust-path" x1="90" y1="99" x2="630" y2="209" />
+
+              <g class="data-points">
+                <circle cx="90" cy="99" r="7" />
+                <circle cx="630" cy="209" r="7" />
+              </g>
+
+              <g class="chart-callout start">
+                <rect x="112" y="54" width="126" height="50" rx="8" />
+                <text x="128" y="84">68% in 1972</text>
+              </g>
+
+              <g class="chart-callout end">
+                <rect x="470" y="222" width="136" height="50" rx="8" />
+                <text x="486" y="252">28% in 2025</text>
+              </g>
+
+              <g class="risk-badges">
+                <rect x="330" y="40" width="286" height="44" rx="10" />
+                <text x="348" y="68">#1 misinformation and disinformation</text>
+                <rect x="376" y="94" width="240" height="44" rx="10" />
+                <text x="394" y="122">#3 societal polarization</text>
+              </g>
+            </svg>
+
+            <div class="chart-source">
+              <a href="https://www.axios.com/2025/10/02/media-trust-new-low" target="_blank" rel="noreferrer">Media trust: Gallup trend reported by Axios, 1972-2025.</a>
+              <a href="https://www.weforum.org/publications/global-risks-report-2024/" target="_blank" rel="noreferrer">Risk ranks: World Economic Forum Global Risks Report 2024, two-year outlook.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pillars-section">
+      <div class="container split-grid">
+        <div class="reveal">
+          <span class="kicker">The four pillars</span>
+          <h2>Every PRISM report is built from four signal pillars.</h2>
+          <p>
+            PRISM separates a noisy page into the core perspectives that shape a useful reliability review.
+          </p>
+        </div>
+
+        <div class="pillar-board reveal" aria-label="PRISM report pillars">
+          <div class="pillar-row cyan">
+            <span>01</span>
+            <strong>Language and framing</strong>
+            <p>Looks for loaded wording, emotional framing, vague certainty, and language that may push readers before evidence is clear.</p>
+          </div>
+          <div class="pillar-row green">
+            <span>02</span>
+            <strong>Source transparency</strong>
+            <p>Checks whether claims are tied to named sources, primary documents, clear citations, or vague phrases like "experts say."</p>
+          </div>
+          <div class="pillar-row amber">
+            <span>03</span>
+            <strong>Claim support</strong>
+            <p>Flags statistics, causal claims, and high-impact assertions that need stronger evidence or a clearer trail back to the source.</p>
+          </div>
+          <div class="pillar-row violet">
+            <span>04</span>
+            <strong>AI and media signals</strong>
+            <p>Reviews AI-like writing patterns now and sets the foundation for image provenance, deepfake context, and synthetic-media review.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/prism-logo.svg" alt="" />
+        <span>PRISM</span>
+      </a>
+      <p>&copy; <span id="year"></span> PRISM. Built for clarity, not clicks.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
